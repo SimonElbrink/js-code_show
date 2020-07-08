@@ -1,4 +1,9 @@
-console.log("Hello form My first Javascript file!");
+console.log("Hello form My first Javascript Log!");
+
+window.alert("This is a Alert. Do not overuse this method, as it prevents the user from accessing other parts of the page until the box is closed.");
+
+document.write("<h2>Hello this text is added at the bottom of the body.</h2>");
+
 
 document.getElementById("changeMe").innerHTML = "Hello World Wide Web!"
 document.getElementById("changeMe").style.color = "blue";
@@ -34,7 +39,7 @@ function changeToAnimal(){
 
         var element = myULElements[index];
 
-        if (index % 2 == 0){
+        if (index % 2 === 0){
             element.classList.add("evenUl");
         }else{
             element.classList = "oddUl";
@@ -74,12 +79,12 @@ for (var index = 0; index < ticTacBoard.children.length; index++){
 
     element.style.float = "left";
 
-    if ( index % 2 == 0){
+    if ( index % 2 === 0){
         element.style.backgroundColor = "white";
     }else{
         element.style.backgroundColor = "black";
     }
-};
+}
 
 
 
